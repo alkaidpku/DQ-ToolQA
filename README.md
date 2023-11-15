@@ -101,7 +101,7 @@ assistant:
 
 #### Inference
 
-Different from the training phase, during the inference, if the model invokes "Finish" with the parameter "success," the program terminates; if the parameter is "failed," the program backtracks. The specific operation involves replacing the last step of the dialogue history with: "Calling bluhbluh did not retrieve valid information."
+Different from the training phase, during the inference, if the model invokes "Finish" with the parameter "success," the program terminates; if the parameter is "failed," the program backtracks. The specific operation involves replacing the last step of the dialogue history with: "调用xx查询xx没有有效信息" ("Calling bluhbluh did not retrieve valid information").
 
 The termination conditions are: the model calling "Finish" returns success or the retrieval exceeds the maximum step limit.
 
